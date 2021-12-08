@@ -30,7 +30,7 @@ def FPR(y_true,y_pred):
 if __name__ == '__main__':
     
     _custom_objects = {"TPR":TPR, "FPR":FPR}
-    fusedPDNet_model = tf.keras.models.load_model('D:/code/evaluation/fusedPDNet3.h5',custom_objects=_custom_objects)
+    fusedPDNet_model = tf.keras.models.load_model('D:/code/evaluation/fusedPDNet.h5',custom_objects=_custom_objects)
     fusedPDNet_model.compile(loss=losses.binary_crossentropy,
             metrics=[BinaryAccuracy(),TPR,FPR])
     peakonly_model = tf.keras.models.load_model('D:/code/evaluation/peakonly.h5',custom_objects=_custom_objects)
@@ -64,23 +64,3 @@ if __name__ == '__main__':
     result7 = peakonly_model.evaluate(intensity2, label2)
     result8 = fusedPDNet_model.evaluate([intensity2,feature2], label2)
     result9 = handcrafted_model.evaluate(feature2, label2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
