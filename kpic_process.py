@@ -78,8 +78,8 @@ if __name__ == '__main__':
     pics3 = [data_transform(i) for i in pics2]
     pics4 = get_kpic_roi(pics3)
     _custom_objects = {"TPR":TPR, "FPR":FPR}
-    fusedPDNet_model = load_model('D:/code/evaluation/fusedPDNet.h5',custom_objects=_custom_objects)
-    result = model_process(fusedPDNet_model,pics4)
+    dffROI_model = load_model('D:/code/evaluation/dffROI.h5',custom_objects=_custom_objects)
+    result = model_process(dffROI_model,pics4)
         
     del_list = []
     for d in range(len(result)):
