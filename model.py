@@ -70,7 +70,7 @@ history_dict1 = history1.history
 
 model.save('D:/code/evaluation/peakonly.h5')
 
-# fusedPDNet model
+# dffROI model
 inputA = Input(shape=(256,1))
 inputB = Input(shape=(5,1))
 initializer = tf.keras.initializers.LecunUniform()
@@ -126,7 +126,7 @@ labs = [i.get_label() for i in l]
 ax1.legend(l, labs, loc='right',fontsize = 15)
 plt.tick_params(labelsize=15)
 plt.savefig('D:/paper/train-.tif',dpi=300, bbox_inches='tight')
-model2.save('D:/code/evaluation/fusedPDNet.h5')
+model2.save('D:/code/evaluation/dffROI.h5')
 
 #handcrafted model
 model3 = models.Sequential()
