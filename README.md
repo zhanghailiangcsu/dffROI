@@ -12,4 +12,5 @@ It has been integrated into KPIC2 framework previously proposed by our group to 
 Anaconda for python 3.6  
 TensorFlow 2.4.0  
 # 3.Usage
-The BRNet model is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it
+The BRNet model is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
+All ROIs can be input into dffROI for processing to filter false positives in the ROIs.
