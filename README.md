@@ -1,2 +1,2 @@
-# fusedPDNet
-Fusion of Quality Evaluation Metrics and Convolutional Neural Network Representations for Accurate Peak Detection in LC-MS
+# dffROI
+Fusion of Quality Evaluation Metrics and Convolutional Neural Network Representations for ROI filtering in LC-MS
