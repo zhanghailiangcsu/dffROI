@@ -8,6 +8,6 @@ The model-agnostic feature importance demon-strates the necessity of fusing hand
 DffROI is an automatic, robust and universal method for ROI filtering by virtue of information fusion and end-to-end learn-ing. 
 It has been integrated into KPIC2 framework previously proposed by our group to facilitate real metab-olomic LC-MS dataset analysis.
 # 2.Depends
-## Anaconda for python 3.6
-## TensorFlow 2.4.0
+Anaconda for python 3.6  
+TensorFlow 2.4.0  
 # 3.Usage
