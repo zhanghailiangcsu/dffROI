@@ -84,8 +84,8 @@ def change(intensity):
 def cal_snr(intensity):
     m = max(intensity)
     inten = [i for i in intensity if i !=0]
-    inten = sorted(inten)
-    return m/inten[0]
+    b = np.mean([inten[0:2]+inten[-3:-1]])
+    return m/b
 
 def getfeature(intensity):
     fea = []
