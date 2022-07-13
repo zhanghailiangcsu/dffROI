@@ -12,7 +12,9 @@ It has been integrated into KPIC2 framework previously proposed by our group to 
 Anaconda for python 3.6  
 TensorFlow 2.4.0  
 R 4.0.2
-# 3.Usage
+# 3.Install
+First you need to install R language.
+# 4.Usage
 The dffROI is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
 All ROIs can be input into dffROI for processing to filter false positives in the ROIs.  
 We provide an example of processing real samples using dffROI+KPIC2.
