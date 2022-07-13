@@ -15,10 +15,10 @@ R 4.0.2
 # 3.Install
 First you need to install R language. The R language version should be 4.0.2 or higher.
 Then install KPIC2. The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
-Next, you need to install the rpy2 package in anaconda.
-···
-  pip install rpy2
-
+Next, you need to install the rpy2 package in anaconda.You can install rpy2 using pip. 
+```
+pip install rpy2
+```
 # 4.Usage
 The dffROI is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
 All ROIs can be input into dffROI for processing to filter false positives in the ROIs.  
