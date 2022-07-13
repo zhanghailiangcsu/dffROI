@@ -19,6 +19,12 @@ Next, you need to install the rpy2 package in anaconda.You can install rpy2 usin
 ```
 pip install rpy2
 ```
+Then configure the environment variables of rpy2. Add two new environment variables named R_HOME and R_User to the local environment variables.
+The value of R_HOME is the installation location of the R language.
+The value of R_User is the installation location of the rpy2 package.
+After configuring the environment variables, you can use the python language to call R.
+That is, you can use dffROI+KPIC2 to process your data.
+
 # 4.Usage
 The dffROI is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
 All ROIs can be input into dffROI for processing to filter false positives in the ROIs.  
