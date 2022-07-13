@@ -14,3 +14,6 @@ TensorFlow 2.4.0
 # 3.Usage
 The dffROI is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
 All ROIs can be input into dffROI for processing to filter false positives in the ROIs.
+We provide an example of processing real samples using dffROI+KPIC2.
+It is named example(.ipynb) and we upload it.
+User can refer to it for processing data.
