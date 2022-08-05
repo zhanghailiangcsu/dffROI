@@ -34,7 +34,8 @@ pip install -r requirements.txt
 The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
  
 ```
-pip install rpy2
+install.packages(c("BiocManager", "devtools", "Ckmeans.1d.dp", "Rcpp", "RcppArmadillo", "mzR", "parallel", "shiny", "plotly", "data.table", "GA", "IRanges", "dbscan", "randomForest"))
+BiocManager::install(c("mzR","ropls"))
 ```
 Then configure the environment variables of rpy2. Add two new environment variables named R_HOME and R_User to the local environment variables.
 The value of R_HOME is the installation location of the R language.
