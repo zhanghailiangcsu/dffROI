@@ -16,27 +16,30 @@ TensorFlow 2.4.0
 1. Install Anaconda  
 2. Install [Git](https://git-scm.com/downloads)  
 3. Install R 4.0.2  
-4. Open commond line, create environment and enter with the following commands:
-```
-conda create -n dffROI python=3.6
-conda activate dffROI
-```
-5. Clone the repository and enter:
-```
-git clone https://github.com/zhanghailiangcsu/dffROI.git
-cd dffROI
-```
-6. Install dependency with the following commands
-```
-pip install -r requirements.txt
-```
-7. Install KPIC2 in R language:
+4. Install KPIC2 in R language:
 The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
- 
 ```
 install.packages(c("BiocManager", "devtools", "Ckmeans.1d.dp", "Rcpp", "RcppArmadillo", "mzR", "parallel", "shiny", "plotly", "data.table", "GA", "IRanges", "dbscan", "randomForest"))
 BiocManager::install(c("mzR","ropls"))
 ```
+5. Open commond line, create environment and enter with the following commands:
+```
+conda create -n dffROI python=3.6
+conda activate dffROI
+```
+6. Clone the repository and enter:
+```
+git clone https://github.com/zhanghailiangcsu/dffROI.git
+cd dffROI
+```
+7. Install dependency with the following commands
+```
+pip install -r requirements.txt
+```
+8. Install KPIC2 in R language:
+
+ 
+
 Then configure the environment variables of rpy2. Add two new environment variables named R_HOME and R_User to the local environment variables.
 The value of R_HOME is the installation location of the R language.
 The value of R_User is the installation location of the rpy2 package.
