@@ -30,9 +30,9 @@ cd dffROI
 ```
 pip install -r requirements.txt
 ```
-First you need to install R language. The R language version should be 4.0.2.
-Then install KPIC2. The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
-Next, you need to install the rpy2 package in anaconda.You can install rpy2 using pip. 
+7. Install KPIC2 in R language:
+The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
+ 
 ```
 pip install rpy2
 ```
