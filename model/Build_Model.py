@@ -63,7 +63,7 @@ def dffROIModel():
     x12 = concatenate([x1.output, x2.output])
     x12 = Dense(1, activation="sigmoid")(x12)
     model2 = Model(inputs=[x1.input, x2.input], outputs=x12)
-    model2.compile(optimizer=optimizers.Adam(lr = 0.00005),
+    model2.compile(optimizer=optimizers.Adam(lr = 0.0001),
             loss=losses.binary_crossentropy,
             metrics=[BinaryAccuracy(),TPR,FPR])
     return model2
