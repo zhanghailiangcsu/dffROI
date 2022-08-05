@@ -7,27 +7,9 @@ Created on Thu Aug 26 14:32:33 2021
 import numpy as np
 import rpy2.robjects as robjects
 from rpy2.robjects import numpy2ri
-import tensorflow as tf
 from tensorflow.keras.models import load_model
-from data_process import getfeature,data_resize
-# import os
-# os.getcwd()
-# os.chdir('C:/Users/Administrator')
-def TPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=TP/(TP+FN)
-    return precision
-
-def FPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=FP/(TN+FP)
-    return precision
+from model.data_process import getfeature,data_resize
+from train.Evaluation_Metrics import TPR,FPR
 
 def data_transform(data):
     data = list(data)
@@ -62,7 +44,7 @@ def model_process(model,pics):
 
 if __name__ == '__main__':
     numpy2ri.activate()
-    robjects.r('''source('R/kpic_process.R')''')
+    robjects.r('''source('kpic2/kpic_process.R')''')
     kpic_pic = robjects.globalenv['kpic_pic']
     kpic_pic_set = robjects.globalenv['kpic_pic_set']
     kpic_pic_getpeak = robjects.globalenv['kpic_pic_getpeak']
