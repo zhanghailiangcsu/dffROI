@@ -36,7 +36,13 @@ cd dffROI
 ```
 pip install -r requirements.txt
 ```
-8. 
+8. Set environment variables for calling R language using rpy2.
+R_HOME represents the installation location of the R language.
+R_USER represents the installation location of the rpy2 package. 
+```
+setx "R_HOME" "C:\Program Files\R\R-4.0.2"
+setx "R_USER" "C:\Users\Administrator\Anaconda3\Lib\site-packages\rpy2"
+```
 
  
 
