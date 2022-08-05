@@ -43,6 +43,10 @@ R_USER represents the installation location of the rpy2 package.
 setx "R_HOME" "C:\Program Files\R\R-4.0.2"
 setx "R_USER" "C:\Users\Administrator\Anaconda3\Lib\site-packages\rpy2"
 ```
+9. Run example.py
+```
+python example.py
+```
 
  
 
