@@ -9,11 +9,14 @@ DffROI is an automatic, robust and universal method for ROI filtering by virtue 
 It has been integrated into KPIC2 framework previously proposed by our group to facilitate real metab-olomic LC-MS dataset analysis.
 ![image](https://github.com/zhanghailiangcsu/dffROI/blob/main/TOC.jpg)
 # 2.Depends
-Anaconda for python 3.6  
+[Anaconda](https://www.anaconda.com) for python 3.6  
 TensorFlow 2.4.0  
-R 4.0.2
+[R 4.0.2](https://mirrors.tuna.tsinghua.edu.cn/CRAN)
 # 3.Install
-First you need to install R language. The R language version should be 4.0.2 or higher.
+1.Install Anaconda  
+2.Install Git  
+3.Install  
+First you need to install R language. The R language version should be 4.0.2.
 Then install KPIC2. The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
 Next, you need to install the rpy2 package in anaconda.You can install rpy2 using pip. 
 ```
