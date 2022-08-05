@@ -43,17 +43,11 @@ R_USER represents the installation location of the rpy2 package.
 setx "R_HOME" "C:\Program Files\R\R-4.0.2"
 setx "R_USER" "C:\Users\Administrator\Anaconda3\Lib\site-packages\rpy2"
 ```
-9. Run example.py
+9. Run example.py. 
+Then, you can use dffROI+KPIC2 to process your data
 ```
 python example.py
 ```
-
- 
-
-Then configure the environment variables of rpy2. Add two new environment variables named R_HOME and R_User to the local environment variables.
-The value of R_HOME is the installation location of the R language.
-The value of R_User is the installation location of the rpy2 package.
-After configuring the environment variables, you can use the python language to call R.
 That is, you can use dffROI+KPIC2 to process your data.
 
 # 4.Usage
