@@ -48,7 +48,6 @@ Then, you can use dffROI+KPIC2 to process your data
 ```
 python example.py
 ```
-That is, you can use dffROI+KPIC2 to process your data.
 
 # 4.Usage
 The dffROI is public at [homepage](https://github.com/zhanghailiangcsu/dffROI), every user can download and use it.
