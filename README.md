@@ -13,30 +13,30 @@ It has been integrated into KPIC2 framework previously proposed by our group to 
 TensorFlow 2.4.0  
 [R 4.0.2](https://mirrors.tuna.tsinghua.edu.cn/CRAN)
 # 3.Install
-1. Install Anaconda  
-2. Install [Git](https://git-scm.com/downloads)  
-3. Install R 4.0.2  
-4. Install KPIC2 in R language:
+1. Install Anaconda.  
+2. Install [Git](https://git-scm.com/downloads).  
+3. Install R 4.0.2.  
+4. Install KPIC2 in R language.
 The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
 ```
 install.packages(c("BiocManager", "devtools", "Ckmeans.1d.dp", "Rcpp", "RcppArmadillo", "mzR", "parallel", "shiny", "plotly", "data.table", "GA", "IRanges", "dbscan", "randomForest"))
 BiocManager::install(c("mzR","ropls"))
 ```
-5. Open commond line, create environment and enter with the following commands:
+5. Open commond line, create environment and enter with the following commands.
 ```
 conda create -n dffROI python=3.6
 conda activate dffROI
 ```
-6. Clone the repository and enter:
+6. Clone the repository and enter.
 ```
 git clone https://github.com/zhanghailiangcsu/dffROI.git
 cd dffROI
 ```
-7. Install dependency with the following commands
+7. Install dependency with the following commands.
 ```
 pip install -r requirements.txt
 ```
-8. Install KPIC2 in R language:
+8. 
 
  
 
