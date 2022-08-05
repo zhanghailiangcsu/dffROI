@@ -14,7 +14,7 @@ TensorFlow 2.4.0
 [R 4.0.2](https://mirrors.tuna.tsinghua.edu.cn/CRAN)
 # 3.Install
 1.Install Anaconda  
-2.Install Git  
+2.Install [Git](https://git-scm.com/downloads)  
 3.Install R 4.0.2  
 Open commond line, create environment and enter with the following commands:
 ```
