@@ -8,35 +8,19 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras import losses,metrics
 from tensorflow.keras.metrics import BinaryAccuracy
-
-
-def TPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=TP/(TP+FN)
-    return precision
-
-def FPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=FP/(TN+FP)
-    return precision
+from train.Evaluation_Metrics import TPR,FPR
 
 
 if __name__ == '__main__':
     
     _custom_objects = {"TPR":TPR, "FPR":FPR}
-    dffROI_model = tf.keras.models.load_model('D:/code/evaluation/dffROI.h5',custom_objects=_custom_objects)
+    dffROI_model = tf.keras.models.load_model('dffROI.h5',custom_objects=_custom_objects)
     dffROI_model.compile(loss=losses.binary_crossentropy,
             metrics=[BinaryAccuracy(),TPR,FPR])
-    peakonly_model = tf.keras.models.load_model('D:/code/evaluation/peakonly.h5',custom_objects=_custom_objects)
+    peakonly_model = tf.keras.models.load_model('peakonly.h5',custom_objects=_custom_objects)
     peakonly_model.compile(loss=losses.binary_crossentropy,
             metrics=[BinaryAccuracy(),TPR,FPR])
-    handcrafted_model = tf.keras.models.load_model('D:/code/evaluation/handcrafted.h5',custom_objects=_custom_objects)
+    handcrafted_model = tf.keras.models.load_model('handcrafted.h5',custom_objects=_custom_objects)
     handcrafted_model.compile(loss=losses.binary_crossentropy,
             metrics=[BinaryAccuracy(),TPR,FPR])
     
