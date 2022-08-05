@@ -56,3 +56,6 @@ All ROIs can be input into dffROI for processing to filter false positives in th
 We provide an example of processing real samples using dffROI+KPIC2.
 It is named example(.ipynb) and we upload it.
 User can refer to it for processing data.
+# Contact
+Hailiang Zhang  
+E-mail 2352434994@qq.com
