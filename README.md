@@ -23,7 +23,7 @@ conda activate dffROI
 ```
 5. Clone the repository and enter:
 ```
-git clone https://github.com/zhanghailiangcsu/FDNet.git
+git clone https://github.com/zhanghailiangcsu/dffROI.git
 cd dffROI
 ```
 6. Install dependency with the following commands
