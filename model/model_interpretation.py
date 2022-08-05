@@ -4,25 +4,9 @@ Created on Mon Sep  6 10:48:53 2021
 
 @author: Administrator
 """
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
-
-def TPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=TP/(TP+FN)
-    return precision
-
-def FPR(y_true,y_pred): 
-    TP=tf.reduce_sum(y_true*tf.round(y_pred))
-    TN=tf.reduce_sum((1-y_true)*(1-tf.round(y_pred)))
-    FP=tf.reduce_sum((1-y_true)*tf.round(y_pred))
-    FN=tf.reduce_sum(y_true*(1-tf.round(y_pred)))
-    precision=FP/(TN+FP)
-    return precision
+from train.Evaluation_Metrics import TPR,FPR
 
 def data_random(intensity2,fea2,feature = 0):
     permutation = np.random.permutation(intensity2.shape[0])
@@ -58,7 +42,7 @@ if __name__ == '__main__':
     label2 = label2.reshape(len(label2),1)
 
     _custom_objects = {"TPR":TPR, "FPR":FPR}
-    dffROI_model = load_model('D:/code/evaluation/dffROI.h5',custom_objects=_custom_objects)
+    dffROI_model = load_model('dffROI.h5',custom_objects=_custom_objects)
     result = dffROI_model.evaluate([intensity2,fea2], label2)
     result1 = []
     for i in range(10):
