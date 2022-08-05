@@ -15,7 +15,12 @@ TensorFlow 2.4.0
 # 3.Install
 1.Install Anaconda  
 2.Install Git  
-3.Install  
+3.Install R 4.0.2  
+Open commond line, create environment and enter with the following commands:
+```
+conda create -n dffROI python=3.6
+conda activate dffROI
+```
 First you need to install R language. The R language version should be 4.0.2.
 Then install KPIC2. The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
 Next, you need to install the rpy2 package in anaconda.You can install rpy2 using pip. 
