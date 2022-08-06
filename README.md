@@ -17,11 +17,12 @@ TensorFlow 2.4.0
 2. Install [Git](https://git-scm.com/downloads).  
 3. Install R 4.0.2.  
 4. Install KPIC2 in R language.
-The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2.
+The method of installing KPIC2 can refer to https://github.com/hcji/KPIC2. First install the depends of KPIC2.
 ```
 install.packages(c("BiocManager", "devtools", "Ckmeans.1d.dp", "Rcpp", "RcppArmadillo", "mzR", "parallel", "shiny", "plotly", "data.table", "GA", "IRanges", "dbscan", "randomForest"))
 BiocManager::install(c("mzR","ropls"))
 ```
+Then, download the source package of KPIC2 at [url](https://github.com/hcji/KPIC2/releases) and install the package locally.  
 5. Open commond line, create environment and enter with the following commands.
 ```
 conda create -n dffROI python=3.6
@@ -55,6 +56,6 @@ All ROIs can be input into dffROI for processing to filter false positives in th
 We provide an example of processing real samples using dffROI+KPIC2.
 It is named example(.ipynb) and we upload it.
 User can refer to it for processing data.
-# Contact
+# 5.Contact
 Hailiang Zhang  
 E-mail 2352434994@qq.com
