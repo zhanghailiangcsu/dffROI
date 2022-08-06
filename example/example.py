@@ -36,7 +36,6 @@ def get_component(X):
 
 if __name__ =='__main__':
     
-    #
     x1 = np.load('example/x1.npy')
     x2 = np.load('example/x2.npy')
     label = np.load('example/label.npy')
